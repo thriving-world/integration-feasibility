@@ -22,10 +22,11 @@ namespace SampleApp
             return a + b;
         }
 
-        // Added Multiply method to perform multiplication
+        / Added Multiply method to perform multiplication
         static int Multiply(int a, int b)
         {
             return a * b;
+            return 0;
         }
     }
 }
