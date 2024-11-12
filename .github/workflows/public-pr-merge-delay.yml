@@ -1,0 +1,18 @@
+name: PR Merge Delay
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  delay_merge:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Wait for 11 minutes before allowing merge
+      run: |
+        # Wait for 2 minutes (120 seconds)
+        sleep 120
+
+    - name: Complete status check for delayed merge
+      run: echo "PR is now 2 minutes old and can be merged."
