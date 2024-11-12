@@ -1,4 +1,4 @@
-name: PR Merge Delay
+name: Public PR Merge Delay
 
 on:
   pull_request:
@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Wait for 11 minutes before allowing merge
+    - name: Wait for 2 minutes before allowing merge
       run: |
         # Wait for 2 minutes (120 seconds)
         sleep 120
